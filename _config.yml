@@ -9,13 +9,13 @@ pygments: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Jekyll Bootstrap
+title : ShaoYang.Yu
 tagline: Site Tagline
 author :
-  name : Name Lastname
-  email : blah@email.test
-  github : username
-  twitter : username
+  name : ShaoYang(绍阳)
+  email : shao4phone@gmail.com
+  github : https://github.com/shaoyangyu
+  twitter : https://twitter.com/yushaoyang
   feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
@@ -26,7 +26,7 @@ author :
 # Else if you are pushing to username.github.io, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : http://username.github.io
+production_url : http://shaoyang.windroader.com
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -125,4 +125,14 @@ JB :
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
-  
+menus:
+    main:
+    - 主页: /
+    - Web: /
+    - 工具: 
+      - /
+      - Emacs: /
+    - 关于: /about/
+    side:
+    - Categories: /categories/
+    - Tags: /tags/

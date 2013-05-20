@@ -1,71 +1,156 @@
 /* Override some defaults */
 html, body {
-  background-color: #eee;
+    background-color: #eee;
 }
 body {
-  padding-top: 40px; /* 40px to make the container go all the way to the bottom of the topbar */
+    padding-top: 40px; /* 40px to make the container go all the way to the bottom of the topbar */
 }
 .container > footer p {
-  text-align: center; /* center align it with the container */
+    text-align: center; /* center align it with the container */
 }
 .container {
-  width: 820px; /* downsize our container to make the content feel a bit tighter and more cohesive. NOTE: this removes two full columns from the grid, meaning you only go to 14 columns and not 16. */
+    width: 820px; /* downsize our container to make the content feel a bit tighter and more cohesive. NOTE: this removes two full columns from the grid, meaning you only go to 14 columns and not 16. */
 }
 
 /* The white background content wrapper */
 .content {
-  background-color: #fff;
-  padding: 20px;
-  margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
-  -webkit-border-radius: 0 0 6px 6px;
-     -moz-border-radius: 0 0 6px 6px;
-          border-radius: 0 0 6px 6px;
-  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
-          box-shadow: 0 1px 2px rgba(0,0,0,.15);
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 -20px; /* negative indent the amount of the padding to maintain the grid system */
+    -webkit-border-radius: 0 0 6px 6px;
+    -moz-border-radius: 0 0 6px 6px;
+    border-radius: 0 0 6px 6px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
+    box-shadow: 0 1px 2px rgba(0,0,0,.15);
 }
 
 /* Page header tweaks */
 .page-header {
-  background-color: #f5f5f5;
-  padding: 20px 20px 10px;
-  margin: -20px -20px 20px;
+    background-color: #f5f5f5;
+    padding: 20px 20px 10px;
+    margin: -20px -20px 20px;
 }
 
 .topbar .btn {
-  border: 0;
+    border: 0;
 }
 
 
 /* tag_box ======================================================== */
 
 .tag_box {
-	list-style:none;
-	margin:0;
-	padding:5px 0 ;
-	overflow:hidden;
+    list-style:none;
+    margin:0;
+    padding:5px 0 ;
+    overflow:hidden;
 }
 .tag_box li {
-	line-height:28px;
+    line-height:28px;
 }
 .tag_box.inline li {
-	float:left;
+    float:left;
 }
 .tag_box a {
-	padding: 3px 6px;
-	margin: 2px;
-	background: #eee;
-	color:#005F6B;
-	border-radius: 3px;
-	text-decoration:none;
+    padding: 3px 6px;
+    margin: 2px;
+    background: #eee;
+    color:#005F6B;
+    border-radius: 3px;
+    text-decoration:none;
 }
 .tag_box a span{
-	vertical-align:super;
-	font-size:0.8em;
+    vertical-align:super;
+    font-size:0.8em;
 }
 .tag_box a.active {
-	background:#57A957;
-	border:1px solid #4C964D;
-	color:#FFF;
+    background:#57A957;
+    border:1px solid #4C964D;
+    color:#FFF;
 }
-	
+
+.topbar  ul ul {
+    display: none;
+}
+
+.topbar  ul li:hover > ul {
+    display: block;
+}
+/* menu ======================================================== */
+.menu{}
+
+.level-1 {
+    background: #efefef; 
+    background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
+    background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
+    background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
+    box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+    padding: 1px 20px;
+    border-radius: 5px;  
+    list-style: none;
+    position: relative;
+    display: inline-table;
+}
+.level-1:after {
+    content: ""; clear: both; display: block;
+}
+
+.level-1 li {
+    float: left;
+    padding: 0 40px;
+}
+.level-1 li:hover {
+    background: #4b545f;
+    background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+    background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+    background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+}
+.level-1 li:hover a {
+    color: #fff;
+}
+
+.level-1 li a {
+    display: block; padding: 25px 40px;
+    color: #757575; text-decoration: none;
+}
+
+.level-3 {
+    background: #000000;
+    border-radius: 0px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    margin: 0px -40px;
+}
+.level-3:after {
+    content: ""; clear: both; display: block;
+}
+
+
+.level-3 li {
+    float: none; 
+    border-top: 1px solid #6b727c;
+    border-bottom: 1px solid #575f6a; position: relative;
+}
+.level-3 li:hover {
+    background: #4b545f;
+    background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+    background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+    background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+}
+.level-3 li:hover a {
+    color: #fff;
+}
+
+.level-3 li a {
+    padding: 15px 40px;
+    color: #fff;
+}	
+.level-3 li a:hover {
+    background: #4b545f;
+}
+
+.level-5 {
+    position: absolute; left: 100%; top:0;
+    background: #000000;
+}
