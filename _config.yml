@@ -84,14 +84,14 @@ JB :
   comments :
     provider : disqus
     disqus :
-      short_name : jekyllbootstrap
+      short_name : shaoyangblog
     livefyre :
-      site_id : 123
+      site_id : 
     intensedebate :
-      account : 123abc
+      account : 
     facebook :
-      appid : 123
-      num_posts: 5
+      appid : 
+      num_posts: 
       width: 580
       colorscheme: light
    
@@ -139,4 +139,3 @@ menus:
     - Tags: /tags/
 
 markdown: redcarpet
-
