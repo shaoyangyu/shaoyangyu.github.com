@@ -16,6 +16,7 @@ author :
   email : shao4phone@gmail.com
   github : https://github.com/shaoyangyu
   twitter : https://twitter.com/yushaoyang
+  facebook : https://www.facebook.com/profile.php?id=100004307644133
   feedburner : feedname
 
 # The production_url is only used when full-domain names are needed
@@ -132,7 +133,10 @@ menus:
     - 工具: 
       - /
       - Emacs: /
-    - 关于: /about/
+    - 关于: /pages/about/
     side:
     - Categories: /categories/
     - Tags: /tags/
+
+markdown: redcarpet
+

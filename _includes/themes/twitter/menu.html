@@ -50,7 +50,7 @@
               </ul>
             </li>
             <li>
-              <a href="/about/">关于</a>
+              <a href="/pages/about/">关于</a>
             </li>
           </ul>
         </div>
@@ -66,12 +66,23 @@
       <footer>
         <p>&copy; {{ site.author.name }} 2012 
           with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
-          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/"
+          target="_blank">Twitter Bootstrap</a>
         </p>
-      </footer>
+        <p>
+	<a href="mailto:{{ site.author.email }}?subject=[FromGitBlog]" rel="me">Email:{{ site.author.email }}</a><p>
+	<a href="{{ site.author.github }}"  rel="me">Github:{{ site.author.github }}</a><p>
+	<a href="{{ site.author.twitter }}" rel="me">Twitter:{{ site.author.twitter }}</a><p>
+	<a href="{{ site.author.facebook }}"  rel="me">FaceBook:{{ site.author.facebook }}</a><p>
+	<a href="http://feeds.feedburner.com/{{ site.author.feedname }}">Subscribe to RSS Feed</a><p>
+        </p>
 
-    </div> <!-- /container -->
+</ul>
 
-    {% include JB/analytics %}
-  </body>
+</footer>
+
+</div> <!-- /container -->
+
+{% include JB/analytics %}
+</body>
 </html>
